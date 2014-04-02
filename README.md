@@ -8,7 +8,7 @@ The goal of this program was to write a program that stores the value $9 in loca
 The first step was to find what operation would complete the nessecary tasks. 
 From the PRISM Manual I found that LDAI loads the value of the operand into the accumulator and then the STA operation stores the contents of the accumulator into the operand address.
 This sequence was repeated the nessecary amount of time to complete the program. The program was completed in exactly $11 linesof code.
-```assembly
+```parrot assembly
 		   00	   7	LDAI	9	
 		   01	   9				
 		   02	   D	STA	  B0		
