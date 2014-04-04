@@ -24,7 +24,7 @@ This sequence was repeated the nessecary amount of time to complete the program.
 		   0C	   D	STA	  CB		
 		   0D	   B				
 		   0E	   C				
-loop	0F	   9	JMP	  loop
+loop		0F	   9	JMP	  loop
 		   10	   F				
 		   11	   0		
 ```
@@ -43,7 +43,30 @@ This program required some thinking to get under the desired lines of code. Init
 		   07	   B				
 		   08	   4	OUT		2	
 		   09	   2				
-loop	 0A	   9	JMP		loop
+loop	 	0A	   9	JMP		loop
 		   0B	   A				
 		   0C	   0					
+```
+#####Loops
+The goal of this program was to toop through the output ports decrementing by one on each output.
+######Code Design
+This program required a sequence of IN, OUT, then decrament by using (ADDI F). then looping back to the top of the sequence. the code looked as follows
+```
+		   00	   5	IN	3	
+		   01	   3			
+loop	   02	   4	OUT	0	
+		   03	   0			
+		   04	   6	ADDI	F
+		   05	   F			
+		   06	   4	OUT	1	
+		   07	   1			
+		   08	   6	ADDI	F
+		   09	   F			
+		   0A	   4	OUT	2	
+		   0B	   2			
+		   0C	   6	ADDI	1
+		   0D	   1			
+		   0E	   9	JMP	loop
+		   0F	   2			
+		   10	   0								
 ```
