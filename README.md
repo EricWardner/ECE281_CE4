@@ -2,7 +2,7 @@ ECE281_CE4
 ==========
 ###PRISM Assembly Language Programming
 
-#####Simple Memory Manipulation
+####Simple Memory Manipulation
 The goal of this program was to write a program that stores the value $9 in location $B0, $8 in $C4 and $B in $CB in $11 lines of code or less
 ######Code Design
 The first step was to find what operation would complete the nessecary tasks. 
@@ -28,7 +28,7 @@ loop		0F	   9	JMP	  loop
 		   10	   F				
 		   11	   0		
 ```
-#####Mathmatics
+####Mathmatics
 The goal of this program was to write a program that retrieves a value from location $B0, doubles it, and subtracts 4 then outputs it to port 2 in $0c lines of code or less
 ######Code Design
 This program required some thinking to get under the desired lines of code. Initaily my thought was to use NEG to complete the task but after realizing NEG simply converted the number to two's compiment I loaded the 4 to the accumulator as C (two's compliment) then added the value from $B0. OUT was used to output the value from the accumulator to the port.
@@ -47,7 +47,7 @@ loop		0A	   9	JMP		loop
 		   0B	   A				
 		   0C	   0					
 ```
-#####Loops
+####Loops
 The goal of this program was to toop through the output ports decrementing by one on each output.
 ######Code Design
 This program required a sequence of IN, OUT, then decrament by using (ADDI F). then looping back to the top of the sequence. the code looked as follows
