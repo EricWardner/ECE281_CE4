@@ -43,7 +43,7 @@ This program required some thinking to get under the desired lines of code. Init
 		   07	   B				
 		   08	   4	OUT		2	
 		   09	   2				
-loop	 0A	   9	JMP		loop
+loop	 	0A	   9	JMP		loop
 		   0B	   A				
 		   0C	   0					
 ```
