@@ -49,6 +49,7 @@ loop		0A	   9	JMP		loop
 ```
 ####Loops
 The goal of this program was to toop through the output ports decrementing by one on each output.
+Functionality was checked to be complete by Captain Silva
 ######Code Design
 This program required a sequence of IN, OUT, then decrament by using (ADDI F). then looping back to the top of the sequence. the code looked as follows
 ```
