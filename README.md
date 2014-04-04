@@ -24,7 +24,7 @@ This sequence was repeated the nessecary amount of time to complete the program.
 		   0C	   D	STA	  CB		
 		   0D	   B				
 		   0E	   C				
-loop	0F	   9	JMP	  loop
+loop		0F	   9	JMP	  loop
 		   10	   F				
 		   11	   0		
 ```
@@ -43,7 +43,7 @@ This program required some thinking to get under the desired lines of code. Init
 		   07	   B				
 		   08	   4	OUT		2	
 		   09	   2				
-loop	0A	   9	JMP		loop
+loop		0A	   9	JMP		loop
 		   0B	   A				
 		   0C	   0					
 ```
